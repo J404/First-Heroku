@@ -9,5 +9,5 @@ app.get("/", (req, res) => {
     });
 });
 
-server.listen(app);
+app.listen(app);
 console.log("Listening on port 3000");
