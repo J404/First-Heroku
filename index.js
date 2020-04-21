@@ -1,8 +1,6 @@
 const express = require("express");
 const app = express();
 
-const server = require("http").createServer(app);
-
 const port = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
@@ -11,5 +9,5 @@ app.get("/", (req, res) => {
     });
 });
 
-server.listen(port);
+server.listen(app);
 console.log("Listening on port 3000");
